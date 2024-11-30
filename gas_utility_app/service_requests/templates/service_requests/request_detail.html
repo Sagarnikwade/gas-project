@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>{{ service_request.service_type }} - {{ service_request.status }}</h2>
+<p>{{ service_request.description }}</p>
+<p>Created at: {{ service_request.created_at }}</p>
+<p>Last updated: {{ service_request.updated_at }}</p>
+{% endblock %}
